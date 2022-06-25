@@ -1,0 +1,23 @@
+
+<table>
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>Наименование</td>
+        <td>Описание</td>
+        <td>Цена</td>
+    </tr>
+    </thead>
+
+    <tbody>
+    {%  for row in info %}
+        <tr>
+            <td>{{row.id}}</td>
+            <td>{{row.name}}</td>
+            <td>{{row.tale}}</td>
+            <td>{{row.price}}</td>
+        </tr>
+    {%  endfor %}
+    </tbody>
+</table>
+
